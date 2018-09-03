@@ -1,10 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext');
+
 /* Colors */
-$paragraph-color: #000000;
+$sidebar-color: #191919;
+$main-content-background-color: #f5f5f2;
+$sections-color: #fff;
+
+$sidebar-item-color: #999999;
 $brand-main-color: #ff0000;
+$messenger-active-color: #56819f;
+$nav-user-color: #56819f;
+$calendar-date-color: #333333;
+
+$header-nav-color: #fff;
+$header-sum-color: #9c9c9c;
+
+
+$orange-button-color: #f58220;
+
+
+$table-data-color: #a6a6a6;
+$table-link-color: #56819f;
+
 
 /* Font sizes */
 $paragraph-font-size: 16px;
+$h1-font-size: 24px;
+$h2-font-size: 16px;
+
+
+/* --Top nav */
+$wallet-font-size: 20px;
+$nav-user-name-font-size: 13px;
+
+
+/* --Sidebar */
+$sidebar-item-font-size: 14px;
+$messenger-font-size: 14px;
+
+/* --Sections */
+
+$calendar-date-font-size: 14px;
+$statistic-summary-font-size: 16px;
+$section-titles-font-size: 16px;
+
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
+$brand-font: "Roboto", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;

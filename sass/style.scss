@@ -1,13 +1,37 @@
-import "variables";
-import "mixins";
-import "normalize";
-import "layout";
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
 
 /* Components */
-import "components/form_field";
+@import "components/form_field";
+@import "components/button-add-new";
+@import "components/calendar";
+@import "components/chart";
+@import "components/form_field";
+@import "components/links-table";
+@import "components/sidebar";
+@import "components/statistic-summary";
+@import "components/topnav";
 
 /* Sections */
-import "section/registration_form";
+@import "sections/registration_form";
 
 /* Pages / Views */
-import "pages/registration";
+@import "pages/registration";
+
+body {
+  font: 100% $brand-font;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 80%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}

@@ -1,0 +1,43 @@
+
+
+header {
+  background-color: $header-nav-color;
+  height: 60px;
+  width: 100%;
+
+
+  ul {
+    float: right;
+    list-style-type: none;
+    @include reset;
+  }
+
+  li {
+    border-right: 1px dotted #000;
+    min-width: 60px;
+    width: 100px;
+    padding: 0 20px;
+    float: left;
+    &:hover {
+
+    }
+  }
+
+  img {
+    display: inline-block;
+    object-fit: cover;
+    width: 15px;
+    margin: 15px;
+  }
+
+  .sum {
+    color: $header-sum-color;
+    font-size: $wallet-font-size;
+    display: inline-block;
+  }
+  p {
+    color: $nav-user-color;
+    font-size: $nav-user-name-font-size;
+    display: inline-block;
+  }
+}

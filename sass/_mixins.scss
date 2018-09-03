@@ -1,0 +1,24 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin clearFix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@mixin mQ ($arg) {
+  @media (max-width: $arg) {
+    @content;
+  }
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
