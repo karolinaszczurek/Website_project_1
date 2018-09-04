@@ -6,28 +6,98 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<header>
-    <nav class="container clearfix">
-        <ul>
-            <li>
-                <img src="images/icons/wallet.svg" alt="icon-wallet">
-                <p class="sum">$1,500.00</p>
-                <img src="images/icons/arrow-down-small.svg" alt="icon-arrow">
-            </li>
-            <li>
-                <img src="images/icons/notification.svg" alt="icon-notification">
-            </li>
-            <li>
-                <img src="images/icons/profile.svg" alt="icon-user-profile">
-                <p>Leonardo Dicaprio</p>
-            </li>
-            <li>
-                <img src="images/icons/quit.svg" alt="icon-quit">
-            </li>
-        </ul>
-    </nav>
-</header>
+    <header class="col-m-10">
+        <nav>
+            <div class="row col-m-10">
+                <ul>
+                    <li>
+                        <img src="images/icons/wallet.svg" alt="icon-wallet">
+                        <p class="header-sum">$1,500.00</p>
+                        <img class="arrow-down" src="images/icons/arrow-down-small.svg" alt="icon-arrow">
+                    </li>
+                    <li>
+                        <img src="images/icons/notification.svg" alt="icon-notification">
+                    </li>
+                    <li>
+                        <img src="images/icons/profile.svg" alt="icon-user-profile">
+                        <p class="header-user-name">Leonardo Dicaprio</p>
+                    </li>
+                    <li>
+                        <img src="images/icons/quit.svg" alt="icon-quit">
+                    </li>
+                </ul>
+            </div>
 
+        </nav>
+    </header>
+    <section class="sidebar col-m-2">
+        <div class ="sidebar-logo">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <img class="hamburger" src="images/icons/hamburger.svg" alt="icon-hamburger">
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <img class="sidebar-icon" src="images/icons/general.svg" alt="icon-general">
+                    <h3 class="h3-sidebar">General</h3>
+                </li>
+                <li>
+                    <img class="sidebar-icon" src="images/icons/details.svg" alt="icon-detail">
+                    <h3 class="h3-sidebar">Details</h3>
+                </li>
+                <li>
+                    <img class="sidebar-icon" src="images/icons/links.svg" alt="icon-links">
+                    <h3 class="h3-sidebar">Links</h3>
+                </li>
+                <li>
+                    <img class="sidebar-icon" src="images/icons/banners.svg" alt="icon-banners">
+                    <h3 class="h3-sidebar">Banners</h3>
+                </li>
+                <li>
+                    <img class="sidebar-icon" src="images/icons/personaldata.svg" alt="icon-personal-data">
+                    <h3 class="h3-sidebar">Personal data</h3>
+                </li>
+                <li>
+                    <img class="sidebar-icon" src="images/icons/payout.svg" alt="icon-payout">
+                    <h3 class="h3-sidebar">Payouts</h3>
+                </li>
+                <li>
+                    <img class="sidebar-icon" src="images/icons/postback.svg" alt="icon-postback">
+                    <h3 class="h3-sidebar">Postback</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-messenger">
+            <h3 class="h3-sidebar">Your Manager</h3>
+            <div class="active-contact">
+                <img src="images/avatar.png" alt="avatar-messenger">
+                <a href="#" class="messenger-active-contact">Michael E.</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-content col-m-10">
+        <div class="general-statistic container">
+            <div class="general-statistic-header">
+                <h2>General Statistic</h2>
+            </div>
+             <div class="calendar col-m-10">
+                 <input type="date" name="from">
+                 <input type="date" name="to">
+                 <button class="btn"><img src="images/icons/refresh.svg"></button>
+
+
+
+
+             </div>
+             <div class="statistics">
+
+             </div>
+             <div class="chart">
+
+             </div>
+        </div>
+    </section>
 
 </body>
 

@@ -1,0 +1,45 @@
+.main-content {
+  @include reset;
+  position: absolute;
+  top: 80px;
+  margin-left: 18%;
+  background-color: $sections-color;
+
+
+  .general-statistic {
+    margin: 0 auto;
+
+
+    .general-statistic-header {
+      text-transform: uppercase;
+      font-size: $section-titles-font-size;
+      color: $sections-titles-color;
+      margin: 1em;
+      border-bottom: 1px dotted #000;
+
+
+    }
+    .calendar {
+      margin: 5% auto;
+
+      .btn {
+        background-color: $orange-button-color;
+        width: 2em;
+        height: 2em;
+        cursor: pointer;
+        border: none;
+        @include border-radius(5%);
+      }
+
+      img {
+        fill: #fff;
+        width: 15px;
+
+
+      }
+    }
+
+
+
+  }
+}

@@ -20,18 +20,18 @@
 /* Pages / Views */
 @import "pages/registration";
 
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   font: 100% $brand-font;
   margin: 0;
   padding: 0;
-}
-
-header {
-  width: 80%;
+  background-color: $main-content-background-color;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
 }

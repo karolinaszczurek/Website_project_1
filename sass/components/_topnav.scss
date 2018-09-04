@@ -1,43 +1,49 @@
 
-
 header {
   background-color: $header-nav-color;
-  height: 60px;
-  width: 100%;
+  height: 4em;
+  float: right;
+  border-bottom: 1px dotted #000;
 
-
-  ul {
-    float: right;
-    list-style-type: none;
+  .row {
     @include reset;
-  }
+    float: right;
 
-  li {
-    border-right: 1px dotted #000;
-    min-width: 60px;
-    width: 100px;
-    padding: 0 20px;
-    float: left;
-    &:hover {
-
+    ul {
+      float: right;
+      list-style-type: none;
+      @include reset;
     }
-  }
 
-  img {
-    display: inline-block;
-    object-fit: cover;
-    width: 15px;
-    margin: 15px;
-  }
+    li {
+      border-right: 1px dotted #000;
+      float: left;
+    }
 
-  .sum {
-    color: $header-sum-color;
-    font-size: $wallet-font-size;
-    display: inline-block;
-  }
-  p {
-    color: $nav-user-color;
-    font-size: $nav-user-name-font-size;
-    display: inline-block;
+    img {
+      display: inline-block;
+      object-fit: cover;
+      width: 20px;
+      margin: 20px;
+      float: left;
+    }
+    .arrow-down {
+      float: right;
+      width: 20px;
+      margin-top: 25px;
+    }
+    .header-sum {
+      color: $header-sum-color;
+      font-size: $wallet-font-size;
+      display: inline-block;
+      margin: 18px;
+    }
+    .header-user-name {
+      color: $nav-user-color;
+      font-size: $nav-user-name-font-size;
+      display: inline-block;
+      margin: 20px 20px 20px 0;
+      float: right;
+    }
   }
 }
