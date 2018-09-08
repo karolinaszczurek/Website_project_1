@@ -32,6 +32,11 @@ body {
   background-color: $main-content-background-color;
 }
 
+.main-container {
+  display: flex;
+  width: 100%;
+}
+
 .container {
   margin: 0 auto;
 }

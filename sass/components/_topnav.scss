@@ -5,9 +5,12 @@ header {
   float: right;
   border-bottom: 1px dotted #000;
 
+
   .row {
     @include reset;
     float: right;
+    display: flex;
+    justify-content: flex-end;
 
     ul {
       float: right;

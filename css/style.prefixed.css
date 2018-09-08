@@ -419,10 +419,87 @@ template {
 }
 
 /* Components */
+.calendar-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 50px;
+  height: 100px;
+  border-bottom: 1px dotted #000;
+}
+
+.calendar-content .calendar {
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  border: 1px dotted #000;
+  border-radius: 5px;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.calendar-content .calendar .date-insert {
+  font-size: 14px;
+  color: #333333;
+  padding: 10px;
+  width: 40%;
+  margin: 5px 0;
+  border-right: 1px dotted #000;
+}
+
+.calendar-content .calendar .date-insert-2 {
+  font-size: 14px;
+  color: #333333;
+  padding: 10px;
+  width: 60%;
+  margin: 5px 0;
+}
+
+.calendar-content .calendar .date-insert-2 .calendar-icon {
+  width: 20px;
+  float: right;
+}
+
+.calendar-content .btn {
+  background-color: #f58220;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5%;
+  margin-left: 30px;
+}
+
+.calendar-content .btn svg {
+  fill: #fff;
+  width: 15px;
+}
+
+.chart-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.chart-container .chart-view {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 .sidebar {
   background-color: #191919;
   margin: 0;
   padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .sidebar .sidebar-logo {
@@ -518,6 +595,10 @@ template {
   float: left;
 }
 
+.sidebar .hidden {
+  margin-left: 16.66%;
+}
+
 .main-content {
   margin: 0;
   padding: 0;
@@ -529,6 +610,8 @@ template {
 
 .main-content .general-statistic {
   margin: 0 auto;
+  height: 800px;
+  border-bottom: 1px dotted #000;
 }
 
 .main-content .general-statistic .general-statistic-header {
@@ -539,22 +622,58 @@ template {
   border-bottom: 1px dotted #000;
 }
 
-.main-content .general-statistic .calendar {
-  margin: 5% auto;
+.main-content .general-statistic .statistics-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 50px;
+  height: 150px;
 }
 
-.main-content .general-statistic .calendar .btn {
-  background-color: #f58220;
-  width: 2em;
-  height: 2em;
-  cursor: pointer;
-  border: none;
-  border-radius: 5%;
+.main-content .general-statistic .statistics {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.main-content .general-statistic .calendar img {
-  fill: #fff;
-  width: 15px;
+.main-content .general-statistic .statistics .table-1 {
+  width: 40%;
+}
+
+.main-content .general-statistic .statistics .table-1 tr {
+  height: 30px;
+}
+
+.main-content .general-statistic .statistics .table-1 tr td {
+  border-bottom: 1px dotted #000;
+}
+
+.main-content .general-statistic .statistics .table-1 tr .table-content-name {
+  font-size: 16px;
+  color: #a6a6a6;
+}
+
+.main-content .general-statistic .statistics .table-2 {
+  width: 40%;
+}
+
+.main-content .general-statistic .statistics .table-2 tr {
+  height: 30px;
+}
+
+.main-content .general-statistic .statistics .table-2 tr td {
+  border-bottom: 1px dotted #000;
+}
+
+.main-content .general-statistic .statistics .table-2 tr .table-content-name {
+  font-size: 16px;
+  color: #a6a6a6;
 }
 
 header {
@@ -568,6 +687,10 @@ header .row {
   margin: 0;
   padding: 0;
   float: right;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 header .row ul {
@@ -623,6 +746,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f5f5f2;
+}
+
+.main-container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .container {

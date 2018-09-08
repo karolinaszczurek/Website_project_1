@@ -6,99 +6,137 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header class="col-m-10">
-        <nav>
-            <div class="row col-m-10">
+    <div class="main-container">
+        <header class="col-m-10">
+            <nav>
+                <div class="row col-m-10">
+                    <ul>
+                        <li>
+                            <img src="images/icons/wallet.svg" alt="icon-wallet">
+                            <p class="header-sum">$1,500.00</p>
+                            <img class="arrow-down" src="images/icons/arrow-down-small.svg" alt="icon-arrow">
+                        </li>
+                        <li>
+                            <img src="images/icons/notification.svg" alt="icon-notification">
+                        </li>
+                        <li>
+                            <img src="images/icons/profile.svg" alt="icon-user-profile">
+                            <p class="header-user-name">Leonardo Dicaprio</p>
+                        </li>
+                        <li>
+                            <img src="images/icons/quit.svg" alt="icon-quit">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="sidebar col-m-2 hidden">
+            <div class ="sidebar-logo">
+                <img class="logo" src="images/logo.png" alt="logo">
+                <img class="hamburger" src="images/icons/hamburger.svg" alt="icon-hamburger">
+            </div>
+            <div class="sidebar-menu">
                 <ul>
                     <li>
-                        <img src="images/icons/wallet.svg" alt="icon-wallet">
-                        <p class="header-sum">$1,500.00</p>
-                        <img class="arrow-down" src="images/icons/arrow-down-small.svg" alt="icon-arrow">
+                        <img class="sidebar-icon" src="images/icons/general.svg" alt="icon-general">
+                        <h3 class="h3-sidebar">General</h3>
                     </li>
                     <li>
-                        <img src="images/icons/notification.svg" alt="icon-notification">
+                        <img class="sidebar-icon" src="images/icons/details.svg" alt="icon-detail">
+                        <h3 class="h3-sidebar">Details</h3>
                     </li>
                     <li>
-                        <img src="images/icons/profile.svg" alt="icon-user-profile">
-                        <p class="header-user-name">Leonardo Dicaprio</p>
+                        <img class="sidebar-icon" src="images/icons/links.svg" alt="icon-links">
+                        <h3 class="h3-sidebar">Links</h3>
                     </li>
                     <li>
-                        <img src="images/icons/quit.svg" alt="icon-quit">
+                        <img class="sidebar-icon" src="images/icons/banners.svg" alt="icon-banners">
+                        <h3 class="h3-sidebar">Banners</h3>
+                    </li>
+                    <li>
+                        <img class="sidebar-icon" src="images/icons/personaldata.svg" alt="icon-personal-data">
+                        <h3 class="h3-sidebar">Personal data</h3>
+                    </li>
+                    <li>
+                        <img class="sidebar-icon" src="images/icons/payout.svg" alt="icon-payout">
+                        <h3 class="h3-sidebar">Payouts</h3>
+                    </li>
+                    <li>
+                        <img class="sidebar-icon" src="images/icons/postback.svg" alt="icon-postback">
+                        <h3 class="h3-sidebar">Postback</h3>
                     </li>
                 </ul>
             </div>
-
-        </nav>
-    </header>
-    <section class="sidebar col-m-2">
-        <div class ="sidebar-logo">
-            <img class="logo" src="images/logo.png" alt="logo">
-            <img class="hamburger" src="images/icons/hamburger.svg" alt="icon-hamburger">
-        </div>
-        <div class="sidebar-menu">
-            <ul>
-                <li>
-                    <img class="sidebar-icon" src="images/icons/general.svg" alt="icon-general">
-                    <h3 class="h3-sidebar">General</h3>
-                </li>
-                <li>
-                    <img class="sidebar-icon" src="images/icons/details.svg" alt="icon-detail">
-                    <h3 class="h3-sidebar">Details</h3>
-                </li>
-                <li>
-                    <img class="sidebar-icon" src="images/icons/links.svg" alt="icon-links">
-                    <h3 class="h3-sidebar">Links</h3>
-                </li>
-                <li>
-                    <img class="sidebar-icon" src="images/icons/banners.svg" alt="icon-banners">
-                    <h3 class="h3-sidebar">Banners</h3>
-                </li>
-                <li>
-                    <img class="sidebar-icon" src="images/icons/personaldata.svg" alt="icon-personal-data">
-                    <h3 class="h3-sidebar">Personal data</h3>
-                </li>
-                <li>
-                    <img class="sidebar-icon" src="images/icons/payout.svg" alt="icon-payout">
-                    <h3 class="h3-sidebar">Payouts</h3>
-                </li>
-                <li>
-                    <img class="sidebar-icon" src="images/icons/postback.svg" alt="icon-postback">
-                    <h3 class="h3-sidebar">Postback</h3>
-                </li>
-            </ul>
-        </div>
-        <div class="sidebar-messenger">
-            <h3 class="h3-sidebar">Your Manager</h3>
-            <div class="active-contact">
-                <img src="images/avatar.png" alt="avatar-messenger">
-                <a href="#" class="messenger-active-contact">Michael E.</a>
+            <div class="sidebar-messenger">
+                <h3 class="h3-sidebar">Your Manager</h3>
+                <div class="active-contact">
+                    <img src="images/avatar.png" alt="avatar-messenger">
+                    <a href="#" class="messenger-active-contact">Michael E.</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="main-content col-m-10">
+            <div class="general-statistic container">
+                <div class="general-statistic-header">
+                    <h2>General Statistic</h2>
+                </div>
+                    <div class="calendar-content col-m-10">
+                         <div class="calendar col-m-5">
+                             <div class="date-insert">
+                                 <span>16.05.2016</span>
+                             </div>
+                             <div class="date-insert-2">
+                                 <span>16.05.2016</span>
+                                 <div class="calendar-icon">
+                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve">
+                                        <path d="M0,13h14v-1H0V13z M0,10h14V6H0V10z M9,7h4v2H9V7z M1,7h7v2H1V7z M0,0v4h14V0H0z M5,3H1V1h4V3z M13,3H6V1h7V3z"/>
+                                     </svg>
+                                 </div>
+                             </div>
+                         </div>
+                        <button class="btn">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 16 17" style="enable-background:new 0 0 16 17;" xml:space="preserve">
+                                    <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
+                                        l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z"/>
+                        </svg>
+                        </button>
+                    </div>
+                <div class="statistics-container col-m-10">
+                     <div class="statistics col-m-10">
+                         <table class="table-1">
+                             <tr>
+                                 <td class="table-content-name">Visit Signups</td>
+                                 <td>124</td>
+                             </tr>
+                             <tr>
+                                 <td class="table-content-name">FTD</td>
+                                 <td>455</td>
+                             </tr>
+                         </table>
+                         <table class="table-2">
+                             <tr>
+                                 <td class="table-content-name">Net deposit</td>
+                                 <td>564</td>
+                             </tr>
+                             <tr>
+                                 <td class="table-content-name">Turn over</td>
+                                 <td>432</td>
+                             </tr>
+                         </table>
+                    </div>
+                </div>
+                 <div class="chart-container col-m-10">
+                    <div class="chart-view">
+                         <img src="images/graph.png" alt="graph">
+                     </div>
+                 </div>
 
-    <section class="main-content col-m-10">
-        <div class="general-statistic container">
-            <div class="general-statistic-header">
-                <h2>General Statistic</h2>
+
             </div>
-             <div class="calendar col-m-10">
-                 <input type="date" name="from">
-                 <input type="date" name="to">
-                 <button class="btn"><img src="images/icons/refresh.svg"></button>
-
-
-
-
-             </div>
-             <div class="statistics">
-
-             </div>
-             <div class="chart">
-
-             </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
 </body>
 
 </html>
