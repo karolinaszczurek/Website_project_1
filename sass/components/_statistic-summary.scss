@@ -1,21 +1,22 @@
 .main-content {
   @include reset;
   position: absolute;
-  top: 80px;
-  margin-left: 18%;
+  top: 7vh;
   background-color: $sections-color;
 
   .general-statistic {
-    margin: 0 auto;
+
     height: 800px;
-    border-bottom: 1px dotted #000;
 
     .general-statistic-header {
       text-transform: uppercase;
       font-size: $section-titles-font-size;
       color: $sections-titles-color;
-      margin: 1em;
       border-bottom: 1px dotted #000;
+
+      h2 {
+        margin-left: 5%;
+      }
     }
 
   .statistics-container {

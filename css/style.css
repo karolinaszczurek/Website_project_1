@@ -5,6 +5,8 @@
 /* --Top nav */
 /* --Sidebar */
 /* --Sections */
+/* -- buttons */
+/* --tables */
 /* Fonts */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -486,6 +488,100 @@ template {
   justify-content: center;
 }
 
+.main-links {
+  margin-top: 50px;
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 79vh;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.main-links .links-general {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-links .links-general .links-header {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #a6a6a6;
+  border-bottom: 1px dotted #000;
+}
+
+.main-links .links-general .links-header h2 {
+  margin-left: 5%;
+}
+
+.main-links .links-general .add-new-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main-links .links-general .add-new-button-container .add-new-button {
+  width: 150px;
+  height: 45px;
+  background-color: #f58220;
+  border: none;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  border-radius: 5%;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+.main-links .links-general table {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  padding-bottom: 100px;
+}
+
+.main-links .links-general table tr:hover {
+  background-color: rgba(177, 191, 91, 0.18);
+}
+
+.main-links .links-general table td {
+  height: 50px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.main-links .links-general table .table-titles {
+  font-size: 16px;
+  color: #a6a6a6;
+  min-width: 300px;
+  font-weight: 700;
+}
+
+.main-links .links-general table .table-links {
+  font-size: 16px;
+  color: #56819f;
+  min-width: 300px;
+  font-weight: 300;
+}
+
+.main-links .links-general table .table-icon-link {
+  height: 12px;
+  fill: #f58220;
+  min-width: 50px;
+  display: none;
+}
+
+.main-links .links-general table .table-icon-trash {
+  height: 17px;
+  fill: #a6a6a6;
+  min-width: 50px;
+  display: none;
+}
+
 .sidebar {
   background-color: #191919;
   margin: 0;
@@ -514,7 +610,7 @@ template {
 
 .sidebar .sidebar-menu {
   background-color: #191919;
-  height: 100%;
+  height: 40vh;
   margin: 0;
   padding: 0;
 }
@@ -595,23 +691,23 @@ template {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 80px;
-  margin-left: 18%;
+  top: 7vh;
   background-color: #fff;
 }
 
 .main-content .general-statistic {
-  margin: 0 auto;
   height: 800px;
-  border-bottom: 1px dotted #000;
 }
 
 .main-content .general-statistic .general-statistic-header {
   text-transform: uppercase;
   font-size: 16px;
   color: #a6a6a6;
-  margin: 1em;
   border-bottom: 1px dotted #000;
+}
+
+.main-content .general-statistic .general-statistic-header h2 {
+  margin-left: 5%;
 }
 
 .main-content .general-statistic .statistics-container {
@@ -731,13 +827,9 @@ body {
   background-color: #f5f5f2;
 }
 
-.main-container {
+body .main-container {
   display: flex;
   width: 100%;
-}
-
-.container {
-  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,96 @@
+.main-links {
+  margin-top: 50px;
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 79vh;
+  background-color: $sections-color;
+  @include reset;
+
+  .links-general {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+
+
+  .links-header {
+    text-transform: uppercase;
+    font-size: $section-titles-font-size;
+    color: $sections-titles-color;
+    border-bottom: 1px dotted #000;
+
+    h2 {
+      margin-left: 5%;
+    }
+  }
+    .add-new-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      .add-new-button {
+        width: 150px;
+        height: 45px;
+        background-color: $orange-button-color;
+        border: none;
+        @include border-radius(5%);
+        cursor: pointer;
+        font-size: $add-new-button-font-size;
+        color: $button-text-color;
+      }
+    }
+    table {
+      display: flex;
+      justify-content: center;
+      border-collapse: collapse;
+      padding-bottom: 100px;
+
+      tr {
+        &:hover {
+          background-color: rgba(177,191,91,0.18);
+        }
+      }
+
+      td {
+        height: 50px;
+        border-bottom: 1px solid $table-border;
+
+      }
+
+      .table-titles {
+        font-size: $table-title-font-size;
+        color: $table-data-color;
+        min-width: 300px;
+        font-weight: 700;
+
+      }
+
+      .table-links {
+        font-size: $table-title-font-size;
+        color: $table-link-color;
+        min-width: 300px;
+        font-weight: 300;
+
+      }
+
+      .table-icon-link {
+        height: 12px;
+        fill: $orange-button-color;
+        min-width: 50px;
+        display: none;
+      }
+      .table-icon-trash {
+        height: 17px;
+        fill: $table-data-color;
+        min-width: 50px;
+        display: none;
+      }
+
+
+    }
+
+
+ }
+}

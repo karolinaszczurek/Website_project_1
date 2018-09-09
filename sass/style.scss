@@ -30,13 +30,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: $main-content-background-color;
-}
 
-.main-container {
-  display: flex;
-  width: 100%;
-}
-
-.container {
-  margin: 0 auto;
+  .main-container {
+    display: flex;
+    width: 100%;
+  }
 }
