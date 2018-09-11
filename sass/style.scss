@@ -35,4 +35,20 @@ body {
     display: flex;
     width: 100%;
   }
+
+  header,
+  .x-content {
+    width: 100%;
+  }
+
+  .x-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

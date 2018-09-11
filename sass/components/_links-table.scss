@@ -1,10 +1,7 @@
 .main-links {
   margin-top: 50px;
-  height: 820px;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 79vh;
   background-color: $sections-color;
   @include reset;
 

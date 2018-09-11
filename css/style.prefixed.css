@@ -496,13 +496,10 @@ template {
 
 .main-links {
   margin-top: 50px;
-  height: 820px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  position: absolute;
-  top: 79vh;
   background-color: #fff;
   margin: 0;
   padding: 0;
@@ -703,13 +700,7 @@ template {
 .main-content {
   margin: 0;
   padding: 0;
-  position: absolute;
-  top: 7vh;
   background-color: #fff;
-}
-
-.main-content .general-statistic {
-  height: 800px;
 }
 
 .main-content .general-statistic .general-statistic-header {
@@ -780,7 +771,6 @@ template {
 header {
   background-color: #fff;
   height: 4em;
-  float: right;
   border-bottom: 1px dotted #000;
 }
 
@@ -853,5 +843,23 @@ body .main-container {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+}
+
+body header,
+body .x-content {
+  width: 100%;
+}
+
+body .x-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /*# sourceMappingURL=style.prefixed.css.map */

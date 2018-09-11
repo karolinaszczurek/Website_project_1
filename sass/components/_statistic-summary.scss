@@ -1,12 +1,8 @@
 .main-content {
   @include reset;
-  position: absolute;
-  top: 7vh;
   background-color: $sections-color;
 
   .general-statistic {
-
-    height: 800px;
 
     .general-statistic-header {
       text-transform: uppercase;
