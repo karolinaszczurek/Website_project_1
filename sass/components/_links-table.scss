@@ -85,6 +85,20 @@
         display: none;
       }
 
+      tr {
+        &:hover {
+          background-color: rgba(177,191,91,0.18);
+        }
+        &:hover .table-icon-link, .table-icon-trash {
+          display: inline-block;
+          cursor: pointer;
+        }
+
+
+      }
+
+
+
 
     }
 
