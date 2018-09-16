@@ -3,12 +3,11 @@
   @include reset;
   display: flex;
   flex-direction: column;
-
+  min-width: 200px;
 
   .sidebar-logo {
     background-color: $sidebar-color;
     @include reset;
-
 
     .logo {
       float: left;
@@ -18,14 +17,17 @@
     }
 
     .hamburger {
+      fill: #fff;
       margin: 15px;
       display: inline-block;
+      cursor: pointer;
+      width: 30px;
     }
   }
 
   .sidebar-menu {
     background-color: $sidebar-color;
-    height: 40vh;
+    height: 70vh;
     @include reset;
 
     ul {
@@ -64,9 +66,7 @@
       font-weight: 300;
       margin-left: 50px;
       line-height: 50px;
-
     }
-
   }
 
   .sidebar-messenger {
@@ -98,12 +98,24 @@
       margin-left: 20px;
       float: left;
     }
-
   }
 }
 
-.sidebar .hidden {
-  margin-left: 16.66%;
-}
 
+
+@media (max-width: 992px) {
+  .sidebar-logo {
+    position: fixed;
+
+    .hamburger {
+      display: inline-block;
+    }
+  }
+    .hidden {
+      visibility: hidden;
+    }
+
+
+
+}
 

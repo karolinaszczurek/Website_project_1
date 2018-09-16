@@ -10,17 +10,16 @@
     display: flex;
     flex-direction: column;
 
+    .links-header {
+      text-transform: uppercase;
+      font-size: $section-titles-font-size;
+      color: $sections-titles-color;
+      border-bottom: 1px dotted #000;
 
-  .links-header {
-    text-transform: uppercase;
-    font-size: $section-titles-font-size;
-    color: $sections-titles-color;
-    border-bottom: 1px dotted #000;
-
-    h2 {
-      margin-left: 5%;
+      h2 {
+        margin-left: 5%;
+      }
     }
-  }
     .add-new-button-container {
       display: flex;
       justify-content: center;
@@ -46,7 +45,7 @@
 
       tr {
         &:hover {
-          background-color: rgba(177,191,91,0.18);
+          background-color: rgba(177, 191, 91, 0.18);
         }
       }
 
@@ -76,32 +75,42 @@
         height: 12px;
         fill: $orange-button-color;
         min-width: 50px;
-        display: none;
+        visibility: hidden;
       }
       .table-icon-trash {
         height: 17px;
         fill: $table-data-color;
         min-width: 50px;
-        display: none;
+        visibility: hidden;
       }
 
       tr {
+
         &:hover {
-          background-color: rgba(177,191,91,0.18);
-        }
-        &:hover .table-icon-link, .table-icon-trash {
-          display: inline-block;
-          cursor: pointer;
-        }
+          background-color: rgba(177, 191, 91, 0.18);
 
-
+          .table-icon-link,
+          .table-icon-trash {
+            visibility: visible;
+            cursor: pointer;
+          }
+        }
       }
 
-
-
-
     }
+  }
+}
 
+@media (max-width: 992px) {
+  .scroll-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 40px;
+  }
 
- }
+  .scroll-wrapper table {
+    width: 100%;
+    max-width: 100%;
+  }
 }

@@ -11,7 +11,7 @@
   display: table;
 }
 
-@mixin mQ ($arg) {
+@mixin mediaQueries ($arg) {
   @media (max-width: $arg) {
     @content;
   }
