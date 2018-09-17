@@ -34,9 +34,14 @@ body {
   .main-container {
     display: flex;
     width: 100%;
+   }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  header,
+ header,
   .x-content {
     width: 100%;
   }

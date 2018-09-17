@@ -15,15 +15,23 @@
       font-size: $section-titles-font-size;
       color: $sections-titles-color;
       border-bottom: 1px dotted #000;
+      border-top: 1px dotted #000;
 
       h2 {
         margin-left: 5%;
       }
     }
+
+    .scroll-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+    }
     .add-new-button-container {
       display: flex;
       justify-content: center;
-      margin-top: 30px;
+      margin-top: 40px;
       margin-bottom: 30px;
 
       .add-new-button {
@@ -42,6 +50,7 @@
       justify-content: center;
       border-collapse: collapse;
       padding-bottom: 100px;
+      margin: 0 50px;
 
       tr {
         &:hover {
@@ -106,11 +115,12 @@
     display: block;
     width: 100%;
     overflow-x: auto;
-    margin-top: 40px;
   }
 
   .scroll-wrapper table {
     width: 100%;
-    max-width: 100%;
+    min-width: 750px;
+    padding: 0 50px;
+    margin: 0 50px;
   }
 }

@@ -15,12 +15,13 @@
     border-radius: 5px;
     flex-direction: row;
 
+
     .date-insert {
       font-size: $calendar-date-font-size;
       color: $calendar-date-color;
       padding: 10px;
+      margin: 5px;
       width: 40%;
-      margin: 5px 0;
       border-right: 1px dotted #000;
     }
 
@@ -53,4 +54,11 @@
     fill: #fff;
     width: 15px;
   }
+}
+
+@media (max-width: 992px) {
+    .calendar {
+      width: 100%;
+      max-width: 400px;
+    }
 }

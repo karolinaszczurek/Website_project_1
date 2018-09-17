@@ -49,3 +49,11 @@ header {
     }
   }
 }
+
+@media (max-width: 992px) {
+      header {
+        li {
+          visibility: hidden;
+        }
+      }
+}
