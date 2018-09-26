@@ -1,0 +1,10 @@
+.links-subpage-header {
+  text-transform: uppercase;
+  font-size: $section-titles-font-size;
+  color: $sections-titles-color;
+  border-bottom: 1px dotted #000;
+
+  h2 {
+    margin-left: 5%;
+  }
+}

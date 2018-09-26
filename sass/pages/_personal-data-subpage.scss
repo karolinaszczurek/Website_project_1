@@ -1,0 +1,64 @@
+.general-personal-data {
+
+  .personal-data-header {
+    text-transform: uppercase;
+    font-size: $section-titles-font-size;
+    color: $sections-titles-color;
+    border-bottom: 1px dotted #000;
+
+    h2 {
+      margin-left: 5%;
+    }
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+
+    .form-section {
+      margin-top: 40px;
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: 1px dotted #e3e3e3;
+
+      .form-element{
+        margin-bottom: 15px;
+        display: flex;
+
+        label {
+          padding-right: 40px;
+          padding-top: 4px;
+          width: 120px;
+          color: $form-label;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        input {
+          padding: 5px 10px;
+          font-size: 14px;
+          background-color: #fafafa;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          color: #000;
+          outline-color: #333333;
+
+        }
+      }
+      .submit-button {
+        width: 150px;
+        height: 45px;
+        background-color: $orange-button-color;
+        border: none;
+        @include border-radius(5%);
+        cursor: pointer;
+        font-size: $add-new-button-font-size;
+        color: $button-text-color;
+      }
+    }
+  }
+}

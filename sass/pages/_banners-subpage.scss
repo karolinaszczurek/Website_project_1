@@ -1,33 +1,34 @@
-.main-links {
+
+  .general-banners-header {
+    text-transform: uppercase;
+    font-size: $section-titles-font-size;
+    color: $sections-titles-color;
+    border-bottom: 1px dotted #000;
+
+    h2 {
+      margin-left: 5%;
+    }
+  }
+
+.main-banners {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   background-color: $sections-color;
   @include reset;
 
-  .links-general {
+  .banners-general {
     height: 800px;
     display: flex;
     flex-direction: column;
 
-    .links-header {
-      text-transform: uppercase;
-      font-size: $section-titles-font-size;
-      color: $sections-titles-color;
-      border-bottom: 1px dotted #000;
-      border-top: 1px dotted #000;
-
-      h2 {
-        margin-left: 5%;
-      }
-    }
 
     .scroll-wrapper {
       display: flex;
       justify-content: center;
       flex-direction: column;
-
     }
+
     .add-new-button-container {
       display: flex;
       justify-content: center;
@@ -45,11 +46,11 @@
         color: $button-text-color;
       }
     }
-    table {
+    .banners-table {
       display: flex;
       justify-content: center;
       border-collapse: collapse;
-      padding-bottom: 100px;
+      padding-bottom: 50px;
       margin: 0 50px;
 
       tr {

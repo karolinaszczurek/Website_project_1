@@ -14,11 +14,16 @@
 @import "components/statistic-summary";
 @import "components/topnav";
 
+
 /* Sections */
 @import "sections/registration_form";
 
 /* Pages / Views */
 @import "pages/registration";
+@import "pages/payout-subpage";
+@import "pages/banners-subpage";
+@import "pages/links-subpage";
+@import "pages/personal-data-subpage";
 
 * {
   box-sizing: border-box;

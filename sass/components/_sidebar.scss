@@ -46,6 +46,11 @@
         @include reset;
         list-style-type: none;
 
+        a {
+          text-decoration: none;
+          cursor: pointer;
+        }
+
         &:hover {
           background-color: $sidebar-hover-color;
           border-left: 4px solid $sidebar-hover-margin;
@@ -56,6 +61,7 @@
             color: $sidebar-item-hover-color;
           }
         }
+
       }
 
       .sidebar-icon {
@@ -117,6 +123,10 @@
       .hamburger {
         display: inline-block;
       }
+    }
+    .sidebar-wrapper {
+      position: fixed;
+      top: 4em;
     }
     .hidden {
       display: none;
