@@ -13,6 +13,7 @@
 @import "components/sidebar";
 @import "components/statistic-summary";
 @import "components/topnav";
+@import "components/modal-1";
 
 
 /* Sections */
@@ -24,6 +25,7 @@
 @import "pages/banners-subpage";
 @import "pages/links-subpage";
 @import "pages/personal-data-subpage";
+@import "pages/details-subpage";
 
 * {
   box-sizing: border-box;
