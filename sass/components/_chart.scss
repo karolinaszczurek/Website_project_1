@@ -5,8 +5,9 @@
   margin-bottom: 50px;
 
 
-  .chart-view {
-    justify-content: center;
+  #myChart {
+    min-width: 300px;
+    height: 400px;
   }
 }
 
@@ -17,9 +18,4 @@
     overflow-x: auto;
   }
 
-  .scroll-wrapper-chart img {
-    width: auto;
-    max-width: 100%;
-    padding: 0 50px;
-  }
 }

@@ -174,9 +174,10 @@
                             </table>
                         </div>
                     </div>
-                    <div class="chart-container ">
+                    <div class="chart-container">
                         <div class="chart-view scroll-wrapper-chart">
-                            <img src="images/graph.png" alt="graph">
+                            <!--<img src="images/graph.png" alt="graph">-->
+                            <canvas id="myChart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -371,16 +372,8 @@
         </div>
     </div>
 
-    <script>
-        function toggleMenu(visible) {
-            document.querySelector('.sidebar-wrapper').classList.toggle('hidden', visible)
-        }
-
-        document.querySelector('.hamburger').addEventListener('click', function(e) {
-            e.preventDefault();
-            toggleMenu()
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/modals.js"></script>
 
 </body>

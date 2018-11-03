@@ -670,9 +670,9 @@ template {
   margin-bottom: 50px;
 }
 
-.chart-container .chart-view {
-  -ms-flex-pack: center;
-      justify-content: center;
+.chart-container #myChart {
+  min-width: 300px;
+  height: 400px;
 }
 
 @media (max-width: 992px) {
@@ -680,11 +680,6 @@ template {
     display: block;
     width: 100%;
     overflow-x: auto;
-  }
-  .scroll-wrapper-chart img {
-    width: auto;
-    max-width: 100%;
-    padding: 0 50px;
   }
 }
 
